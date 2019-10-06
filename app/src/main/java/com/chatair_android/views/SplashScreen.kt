@@ -1,11 +1,11 @@
-package com.chatair_android
+package com.chatair_android.views
 
 import android.content.Intent
-import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.widget.ProgressBar
+import com.chatair_android.R
 
 
 class SplashScreen : AppCompatActivity() {
@@ -37,7 +37,7 @@ class SplashScreen : AppCompatActivity() {
         }
     }
     private fun goToMain(){
-        val mainActIntent = Intent(applicationContext,MainActivity::class.java)
+        val mainActIntent = Intent(applicationContext, MainActivity::class.java)
         startActivity(mainActIntent)
         finish()
     }
