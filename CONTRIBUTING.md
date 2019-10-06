@@ -25,6 +25,11 @@ Our process for accepting changes operates by [Pull Request (PR)](https://help.g
 
 1.  Once you have integrated comments, or waited for feedback, a Lieutenant should merge your changes in!
 
+## Commit Style
+### Message Structure
+Commit messages should be in the following format:
+
+    #<issue-number> A brief description of changes on one line
 ## CodeStyle:
 
 Our code style guidelines is based on the [Square's Android Style Guide](https://github.com/square/java-code-styles/blob/master/configs/codestyles/SquareAndroid.xml).
