@@ -19,8 +19,8 @@ Cloud Firestore is an extended feature of Google Firebase and a real-time docume
  * Pay as you go including Free Tier
  * Cross platform SDKs
 
-## Feature List(Coming Soon)
-
+## Feature List
+Here's a list of features that we plan to include overtime.
 - [ ] Authentication (Anonymous, Email, Facebook, Twitter, Google+)
 - [ ] Phone Number Authentication
 - [ ] Text Messages
