@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ChatAir-android</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="if_you_forget_your_password_enter_your_email_in_below_field_we_ll_send_you_an_email_with_instruction_to_change_the_password">If you forget your password. Enter your email in below field we\'ll send you an email with instruction to change the password</string>
+    <string name="send">Send</string>
+    <string name="enter_email_address">Enter email address</string>
 </resources>
