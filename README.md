@@ -46,8 +46,14 @@ Here's a list of features that we plan to include overtime.
 - [ ] Block/Unblock Users
 
 # Get involved!
-
 We're very excited about the project and we're looking for other people to get involved. Over time we would like to make the best messaging framework for mobile. Help is always welcome. The more is done the better it gets!
+
+## Contribution Guidelines
+Before contributing be sure to check out the [CONTRIBUTION](https://github.com/ChatAir/ChatAir-android/blob/master/CONTRIBUTING.md) guidelines.
+
+## Communication
+Available Communication Channels:
+* [Slack](https://chatair.slack.com)
 
 # License
 
