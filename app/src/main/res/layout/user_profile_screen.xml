@@ -1,59 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        app:cardElevation="0dp"
-        android:layout_marginTop="70dp"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        app:cardElevation="0dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="150dp"
             android:layout_height="137dp"
             android:gravity="center">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/user_profile_image_string"
                 android:src="@drawable/ic_user_smal" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
+
         <androidx.cardview.widget.CardView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="end"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="2dp"
-            app:cardCornerRadius="40dp"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginRight="4dp">
-            <ImageView
-                android:padding="3dp"
-                android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            app:cardCornerRadius="40dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
+                android:layout_gravity="center"
                 android:contentDescription="@string/camera_icon_string"
+                android:padding="3dp"
                 android:src="@drawable/ic_camera" />
         </androidx.cardview.widget.CardView>
     </androidx.cardview.widget.CardView>
 
-
-
-
     <androidx.cardview.widget.CardView
-        app:cardElevation="0dp"
         android:layout_width="300dp"
         android:layout_height="68dp"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        android:padding="20dp">
+        android:padding="20dp"
+        app:cardElevation="0dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="260dp"
@@ -65,32 +64,32 @@
             android:padding="8dp"
             tools:targetApi="lollipop">
 
-            <ImageView
-                android:layout_gravity="center_vertical"
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
                 android:contentDescription="@string/username_icon_string"
                 android:src="@drawable/ic_user_smal" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/userName"
-                android:layout_gravity="center_vertical"
-                android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="@string/user_name_string" />
+                android:text="@string/user_name_string"
+                android:textSize="20sp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="end"
             android:layout_marginEnd="4dp"
             android:layout_marginRight="4dp"
-            android:elevation="9dp"
             android:contentDescription="@string/edit_icon_string"
+            android:elevation="9dp"
             android:src="@drawable/ic_editiconwithellipse"
             tools:targetApi="lollipop" />
     </androidx.cardview.widget.CardView>
@@ -99,8 +98,8 @@
         android:layout_width="300dp"
         android:layout_height="68dp"
         android:layout_gravity="center"
-        app:cardElevation="0dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        app:cardElevation="0dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="260dp"
@@ -113,32 +112,32 @@
 
             tools:targetApi="lollipop">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center_vertical"
                 android:contentDescription="@string/person_image_string"
                 android:src="@drawable/ic_writing" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/userAbout"
-                android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:textSize="20sp"
-                android:text="@string/about_status_string" />
+                android:text="@string/about_status_string"
+                android:textSize="20sp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="end"
             android:layout_marginEnd="4dp"
             android:layout_marginRight="4dp"
-            android:elevation="9dp"
             android:contentDescription="@string/edit_icon_string"
+            android:elevation="9dp"
             android:src="@drawable/ic_editiconwithellipse"
             tools:targetApi="lollipop" />
     </androidx.cardview.widget.CardView>
