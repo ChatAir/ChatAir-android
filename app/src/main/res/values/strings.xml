@@ -7,4 +7,5 @@
     <string name="about_status_string">About/Status</string>
     <string name="user_profile_image_string">user_profile_image</string>
     <string name="camera_icon_string">camera_icon</string>
+    <string name="profile_string">Profile</string>
 </resources>
