@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">ChatAir-android</string>
-    <string name="person_image_string">person_image</string>
-    <string name="edit_icon_string">edit icon</string>
-    <string name="user_name_string">User Name</string>
-    <string name="username_icon_string">username_icon</string>
+    <string name="person_image_string">User Image</string>
+    <string name="edit_icon_string">Edit Icon</string>
+    <string name="user_name_string">Username</string>
+    <string name="username_icon_string">Username Icon</string>
     <string name="about_status_string">About/Status</string>
-    <string name="user_profile_image_string">user_profile_image</string>
-    <string name="camera_icon_string">camera_icon</string>
+    <string name="user_profile_image_string">User Profile Picture</string>
+    <string name="camera_icon_string">Camera Icon</string>
     <string name="profile_string">Profile</string>
 </resources>
