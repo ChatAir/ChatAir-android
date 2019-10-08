@@ -171,5 +171,4 @@
                 tools:targetApi="lollipop" />
         </androidx.cardview.widget.CardView>
     </androidx.cardview.widget.CardView>
-
 </LinearLayout>
