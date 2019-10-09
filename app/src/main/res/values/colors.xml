@@ -3,13 +3,12 @@
   <color name="colorPrimary">#008577</color>
   <color name="colorPrimaryDark">#00574B</color>
   <color name="colorAccent">#1c9eda</color>
-  <color name="brightcerulean">#1c9eda</color>
+  <color name="light_blue">#1c9eda</color>
   <color name="white">#ffffff</color>
-  <color name="gainsboro">#e1d9d9</color>
+  <color name="light_grey">#e1d9d9</color>
   <color name="black">#000000</color>
-  <color name="dimgray">#707070</color>
-  <color name="gainsboro_1">#dddddd</color>
-  <color name="darkmidnightblue">#094166</color>
-  <color name="darkslateblue">#275879</color>
+  <color name="grey">#707070</color>
+  <color name="slightly_grey">#dddddd</color>
+  <color name="darkblue">#094166</color>
+  <color name="navyblue">#275879</color>
 </resources>
-

@@ -7,7 +7,7 @@
     tools:context=".LoginActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/chatair_logo"
         android:layout_width="138dp"
         android:layout_height="146dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -16,18 +16,18 @@
         app:srcCompat="@drawable/chatair_img" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_sign_in_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_in_title"
-        android:textColor="@color/brightcerulean"
+        android:textColor="@color/light_blue"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/chatair_logo" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/textInput_email"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -37,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/tv_sign_in_title">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/field_email"
@@ -58,7 +58,7 @@
         app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/textInput_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/fieldPassword"
@@ -68,7 +68,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBox_remember_me"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginTop="24dp"
@@ -76,73 +76,73 @@
         app:layout_constraintTop_toBottomOf="@+id/password_text_input" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_remember_me"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:text="@string/remember_me"
-        android:textColor="@color/brightcerulean"
+        android:textColor="@color/light_blue"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/checkBox"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toTopOf="@+id/checkBox" />
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_remember_me"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_remember_me"
+        app:layout_constraintTop_toTopOf="@+id/checkBox_remember_me" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
         android:text="@string/forgot_password"
-        android:textColor="@color/brightcerulean"
+        android:textColor="@color/light_blue"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/password_text_input"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintStart_toEndOf="@+id/tv_remember_me"
+        app:layout_constraintTop_toTopOf="@+id/tv_remember_me" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_sign_in"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:background="@color/brightcerulean"
+        android:background="@color/light_blue"
         android:text="@string/sign_in_btn"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/tv_forgot_password"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/checkBox_remember_me"
+        app:layout_constraintTop_toBottomOf="@+id/tv_remember_me" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_or"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/or"
-        android:textColor="@color/brightcerulean"
+        android:textColor="@color/light_blue"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/btn_sign_in"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/btn_sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sign_in" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_google_login"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_15"
-        android:drawableLeft="@drawable/google_icon"
         android:drawableStart="@drawable/google_icon"
+        android:drawableLeft="@drawable/google_icon"
         android:drawablePadding="-55dp"
         android:text="@string/login_btn"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_sign_in"
+        app:layout_constraintStart_toStartOf="@+id/btn_sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/tv_or" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
