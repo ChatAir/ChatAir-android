@@ -1,11 +1,10 @@
-package com.chatair_android.views
+package com.chatair_android
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.widget.ProgressBar
-import com.chatair_android.R
 
 
 class SplashScreen : AppCompatActivity() {
@@ -32,8 +31,8 @@ class SplashScreen : AppCompatActivity() {
             } catch (e: Exception) {
                 e.printStackTrace()
             }
-
             progress += 10
+            if(progress>10) progressBar.isIndeterminate = false
         }
     }
     private fun goToMain(){

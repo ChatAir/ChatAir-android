@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    tools:context=".views.SplashScreen">
+    tools:context=".SplashScreen">
 
     <ImageView
         android:layout_width="250dp"
@@ -20,8 +20,12 @@
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:progressBackgroundTint="@android:color/holo_blue_light"
+        android:layout_height="10dp"
+        android:indeterminate="true"
+        android:max="100"
+        android:theme="@style/LinearProgress"
+        android:indeterminateTintMode="screen"
+        android:indeterminateBehavior="repeat"
         style="@android:style/Widget.ProgressBar.Horizontal"/>
 
 </RelativeLayout>

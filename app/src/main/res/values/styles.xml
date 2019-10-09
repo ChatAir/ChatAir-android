@@ -7,5 +7,10 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="LinearProgress" parent="Theme.AppCompat.Light">
+        <item name="android:progressTint">@color/colorBluePrimaryDark</item>
+        <item name="android:progressBackgroundTint">@color/colorBluePrimaryLight</item>
+        <item name="android:indeterminateTint">@color/colorBluePrimary</item>
 
+    </style>
 </resources>
