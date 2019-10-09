@@ -9,7 +9,7 @@ import android.widget.ProgressBar
 
 class SplashScreen : AppCompatActivity() {
     private lateinit var progressBar:ProgressBar
-    private val loadingTime = 3000L // 3 Seconds
+    private val loadingTime = 4000L // 3 Seconds
     private lateinit var handler: Handler
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,15 +24,20 @@ class SplashScreen : AppCompatActivity() {
     }
     fun doProgress(){
         var progress = 0
-        while (progress < 100) {
+        Thread.sleep(1000)
+        val max = 100
+        val cnt =90
+
+        progressBar.isIndeterminate = false
+        while (progress <= max) {
             try {
-                Thread.sleep(loadingTime/10)
+                Thread.sleep(loadingTime/cnt)
                 progressBar.setProgress(progress)
             } catch (e: Exception) {
                 e.printStackTrace()
             }
-            progress += 10
-            if(progress>10) progressBar.isIndeterminate = false
+            progress += (max/cnt)
+
         }
     }
     private fun goToMain(){
