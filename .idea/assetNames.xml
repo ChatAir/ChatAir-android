@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="assetNames">
+    <option name="mapping">
+      <map>
+        <entry key="enter_email address" value="enter_emailaddress" />
+        <entry key="login_with google" value="login_withgoogle" />
+        <entry key="rectangle_email-1" value="rectangle_email_1" />
+        <entry key="sign_in button" value="sign_inbutton" />
+      </map>
+    </option>
+  </component>
+</project>
