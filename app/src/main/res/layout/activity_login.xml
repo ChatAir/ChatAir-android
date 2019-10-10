@@ -71,7 +71,6 @@
         android:id="@+id/checkBox_remember_me"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/password_text_input"
         app:layout_constraintTop_toBottomOf="@+id/password_text_input" />
 
@@ -109,6 +108,7 @@
         android:layout_marginTop="44dp"
         android:background="@color/light_blue"
         android:text="@string/sign_in_btn"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/tv_forgot_password"
@@ -140,6 +140,7 @@
         android:text="@string/login_btn"
         android:textAlignment="center"
         android:textSize="18sp"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="@+id/btn_sign_in"
         app:layout_constraintStart_toStartOf="@+id/btn_sign_in"
         app:layout_constraintTop_toBottomOf="@+id/tv_or" />
