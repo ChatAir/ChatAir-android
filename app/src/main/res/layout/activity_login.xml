@@ -131,17 +131,19 @@
 
     <Button
         android:id="@+id/btn_google_login"
-        android:layout_width="340dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/rectangle_15"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_border"
         android:drawableStart="@drawable/google_icon"
         android:drawableLeft="@drawable/google_icon"
         android:drawablePadding="-55dp"
         android:text="@string/login_btn"
         android:textAlignment="center"
-        android:textSize="18sp"
         android:textAllCaps="false"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/btn_sign_in"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn_sign_in"
         app:layout_constraintTop_toBottomOf="@+id/tv_or" />
 
