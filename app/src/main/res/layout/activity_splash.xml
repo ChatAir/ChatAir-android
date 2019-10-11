@@ -8,8 +8,8 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgAppLogoIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
         app:srcCompat="@drawable/app_logo_icon"
         android:layout_marginBottom="60dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,14 +22,16 @@
         android:id="@+id/tvChatAir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/txt_chat_air"
+        android:text="@string/text_chatAir"
         android:textColor="@color/colorApp"
-        android:textSize="50sp"
-        android:layout_marginStart="50dp"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_marginStart="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/imgAppLogoIcon"
-        android:layout_marginLeft="50dp" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="15dp"/>
 
     <ProgressBar
         android:id="@+id/progress_chatAir"
@@ -39,6 +41,8 @@
         android:theme="@style/AppTheme"
         android:indeterminate="true"
         android:indeterminateTint="@color/colorApp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintStart_toStartOf="@+id/imgAppLogoIcon"
         app:layout_constraintEnd_toEndOf="@+id/imgAppLogoIcon"
         app:layout_constraintTop_toBottomOf="@+id/imgAppLogoIcon"
