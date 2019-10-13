@@ -14,7 +14,7 @@
         style="@style/ChatAirToolbar.Chat"
         tools:title="User Name"
         tools:subtitle="Online"
-        tools:navigationIcon="@drawable/ic_user_placeholder"
+        tools:logo="@drawable/ic_user_placeholder"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
