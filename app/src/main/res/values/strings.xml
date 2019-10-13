@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ChatAir-android</string>
+    <string name="text_chatAir">ChatAir</string>
 </resources>
