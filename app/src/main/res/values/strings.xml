@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ChatAir-android</string>
-    <string name="text_chatAir">ChatAir</string>
+
+    <!-- Chat -->
+    <string name="chat_send_message">Enter a message</string>
+    <string name="chat_send_message_content_description">Send message</string>
+
 </resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Margin -->
+    <dimen name="marginRegular">12dp</dimen>
+    <dimen name="marginMedium">16dp</dimen>
+
+    <!-- Padding -->
+    <dimen  name="paddingSmall">8dp</dimen>
+    <dimen name="paddingRegular">12dp</dimen>
+    <dimen name="paddingMedium">16dp</dimen>
+    <dimen name="paddingLarge">32dp</dimen>
+
+    <!-- Text -->
+    <dimen name="textExtraSmall">10sp</dimen>
+    <dimen name="textSmall">12sp</dimen>
+    <dimen name="textRegular">15sp</dimen>
+    <dimen name="textMedium">18sp</dimen>
+
+    <!-- Corners -->
+    <dimen name="cornerRegular">5dp</dimen>
+
+    <!-- Border -->
+    <dimen name="borderRegular">1dp</dimen>
+
+    <!-- Elevation -->
+    <dimen name="elevationToolbar">4dp</dimen>
+
+    <!-- Divider -->
+    <dimen name="dividerRegular">1dp</dimen>
+
+</resources>

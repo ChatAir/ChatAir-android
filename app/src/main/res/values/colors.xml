@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#1C9EDA</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorApp">#1C9EDA</color>
+
+    <!-- region Text Input -->
+    <color name="inputHint">#5C707070</color>
+    <color name="inputText">#707070</color>
+    <!-- endregion -->
+
+    <!-- region Text View -->
+    <color name="textPrimary">#333333</color>
+    <color name="textContrast">#F5F5F5</color>
+    <!-- endregion -->
+
+    <!-- region Chat Message -->
+    <color name="messagePartnerBackground">#EEEEEE</color>
+    <color name="messagePartnerStroke">#707070</color>
+    <color name="messageSenderBackground">@color/colorPrimary</color>
+    <color name="messageSenderStroke">#707070</color>
+    <!-- endregion -->
+
 </resources>
