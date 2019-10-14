@@ -3,6 +3,7 @@
     <color name="colorPrimary">#1C9EDA</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorApp">#1C9EDA</color>
 
     <!-- region Text Input -->
     <color name="inputHint">#5C707070</color>
