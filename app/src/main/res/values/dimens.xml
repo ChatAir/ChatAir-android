@@ -6,7 +6,7 @@
     <dimen name="marginMedium">16dp</dimen>
 
     <!-- Padding -->
-    <dimen  name="paddingSmall">8dp</dimen>
+    <dimen name="paddingSmall">8dp</dimen>
     <dimen name="paddingRegular">12dp</dimen>
     <dimen name="paddingMedium">16dp</dimen>
     <dimen name="paddingLarge">32dp</dimen>
