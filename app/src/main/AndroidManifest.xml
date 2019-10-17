@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.screens.contacts.ContactsActivity"
+            android:parentActivityName=".ui.screens.main.MainActivity" />
+        <activity
             android:name=".ui.screens.splash.SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
@@ -18,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.screens.main.MainActivity"></activity>
+        <activity android:name=".ui.screens.main.MainActivity" />
     </application>
 
 </manifest>
