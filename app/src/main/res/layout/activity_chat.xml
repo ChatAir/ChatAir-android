@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/chat_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chat_toolbar"
+        style="@style/ChatAirToolbar.Chat"
+        tools:title="User Name"
+        tools:subtitle="Online"
+        tools:logo="@drawable/ic_user_placeholder"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Chat Recycler -->
+    <!-- Add recyclerview here when the Gradle implementation is ready, -->
+    <!-- I won't do this here as it is outside the scope of this PR -->
+
+    <!-- Divider -->
+    <View
+        android:id="@+id/chat_message_divider"
+        style="@style/ChatAirDivider.Regular"
+        app:layout_constraintBottom_toTopOf="@+id/chat_message_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Chat Message Input -->
+    <EditText
+        android:id="@+id/chat_message_input"
+        style="@style/ChatAirInput.ChatMessage"
+        android:importantForAutofill="no"
+        android:hint="@string/chat_send_message"
+        android:layout_marginEnd="@dimen/marginRegular"
+        android:layout_marginRight="@dimen/marginRegular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/chat_send_button"/>
+
+    <!-- Send Button -->
+    <ImageButton
+        android:id="@+id/chat_send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send"
+        android:contentDescription="@string/chat_send_message_content_description"
+        android:layout_marginEnd="@dimen/marginRegular"
+        android:layout_marginRight="@dimen/marginRegular"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/chat_message_divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

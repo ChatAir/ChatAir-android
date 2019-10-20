@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Color -->
+    <solid
+        android:color="@color/messageSenderBackground"/>
+
+    <!-- Stroke -->
+    <stroke
+        android:width="@dimen/borderRegular"
+        android:color="@color/messageSenderStroke"/>
+
+    <!-- Corners -->
+    <corners
+        android:radius="@dimen/cornerRegular"/>
+
+</shape>

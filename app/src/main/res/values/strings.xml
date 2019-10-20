@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">ChatAir-android</string>
+
     <string name="sign_in_title">Sign In</string>
     <string name="email_address">Email Address</string>
     <string name="password">Password</string>
@@ -8,4 +9,11 @@
     <string name="sign_in_btn">Sign In</string>
     <string name="or">Or</string>
     <string name="login_btn">Login with Google</string>
+
+    <string name="text_chatAir">ChatAir</string>
+
+    <!-- Chat -->
+    <string name="chat_send_message">Enter a message</string>
+    <string name="chat_send_message_content_description">Send message</string>
+
 </resources>

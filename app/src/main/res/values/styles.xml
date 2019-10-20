@@ -1,12 +1,119 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorControlNormal">@color/colorPrimary</item>
     </style>
+
+    <!-- region Toolbar  -->
+    <style name="ChatAirToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?android:attr/actionBarSize</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:elevation" tools:targetApi="21">@dimen/elevationToolbar</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetRight">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="contentInsetEndWithActions">0dp</item>
+        <item name="titleMarginStart">@dimen/marginMedium</item>
+    </style>
+
+    <style name="ChatAirToolbar.Chat" parent="ChatAirToolbar">
+        <item name="titleTextAppearance">@style/ChatAirToolbar.Chat.Title</item>
+        <item name="subtitleTextAppearance">@style/ChatAirToolbar.Chat.Subtitle</item>
+    </style>
+
+    <style name="ChatAirToolbar.Chat.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/textRegular</item>
+        <item name="fontFamily">@font/segoe_ui_regular</item>
+    </style>
+
+    <style name="ChatAirToolbar.Chat.Subtitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/textExtraSmall</item>
+        <item name="fontFamily">@font/segoe_ui_regular</item>
+    </style>
+    <!--  endregion -->
+
+    <!-- region Text Input -->
+    <style  name="ChatAirInput" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="fontFamily">@font/segoe_ui_regular</item>
+        <item name="android:textColor">@color/inputText</item>
+        <item name="android:textColorHint">@color/inputHint</item>
+        <item name="android:padding">@dimen/paddingRegular</item>
+    </style>
+
+    <style name="ChatAirInput.ChatMessage" parent="ChatAirInput">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:inputType">textCapSentences|textMultiLine</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region Text View -->
+    <style name="ChatAirText" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/segoe_ui_regular</item>
+        <item name="android:textSize">@dimen/textRegular</item>
+    </style>
+
+    <style name="ChatAirText.MessagePartner" parent="ChatAirText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:paddingTop">@dimen/paddingSmall</item>
+        <item name="android:paddingStart">@dimen/paddingSmall</item>
+        <item name="android:paddingEnd">@dimen/paddingLarge</item>
+        <item name="android:paddingLeft">@dimen/paddingSmall</item>
+        <item name="android:paddingRight">@dimen/paddingLarge</item>
+        <item name="android:paddingBottom">@dimen/paddingSmall</item>
+        <item name="android:layout_marginTop">@dimen/marginMedium</item>
+        <item name="android:layout_marginBottom">@dimen/marginMedium</item>
+        <item name="android:layout_marginLeft">@dimen/marginRegular</item>
+        <item name="android:layout_marginStart">@dimen/marginRegular</item>
+        <item name="android:layout_marginRight">@dimen/marginRegular</item>
+        <item name="android:layout_marginEnd">@dimen/marginRegular</item>
+        <item name="android:background">@drawable/background_message_partner</item>
+    </style>
+
+    <style name="ChatAirText.MessageSender" parent="ChatAirText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textContrast</item>
+        <item name="android:paddingTop">@dimen/paddingSmall</item>
+        <item name="android:paddingStart">@dimen/paddingLarge</item>
+        <item name="android:paddingEnd">@dimen/paddingSmall</item>
+        <item name="android:paddingLeft">@dimen/paddingLarge</item>
+        <item name="android:paddingRight">@dimen/paddingSmall</item>
+        <item name="android:paddingBottom">@dimen/paddingSmall</item>
+        <item name="android:layout_marginTop">@dimen/marginMedium</item>
+        <item name="android:layout_marginBottom">@dimen/marginMedium</item>
+        <item name="android:layout_marginLeft">@dimen/marginRegular</item>
+        <item name="android:layout_marginStart">@dimen/marginRegular</item>
+        <item name="android:layout_marginRight">@dimen/marginRegular</item>
+        <item name="android:layout_marginEnd">@dimen/marginRegular</item>
+        <item name="android:background">@drawable/background_message_sender</item>
+        <item name="android:layout_gravity">end</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region Divider -->
+    <style name="ChatAirDivider"/>
+
+    <style name="ChatAirDivider.Regular" parent="ChatAirDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dividerRegular</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <!-- endregion -->
 
     <!-- Activity with no Title -->
     <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
