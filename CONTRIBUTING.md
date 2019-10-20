@@ -30,9 +30,6 @@ Our process for accepting changes operates by [Pull Request (PR)](https://help.g
 Commit messages should be in the following format:
 
     #<issue-number> A brief description of changes on one line
-## CodeStyle:
-
-Our code style guidelines is based on the [Square's Android Style Guide](https://github.com/square/java-code-styles/blob/master/configs/codestyles/SquareAndroid.xml).
 
 ### Some **DONT's**
 
