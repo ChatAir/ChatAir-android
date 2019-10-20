@@ -21,7 +21,7 @@
         </activity>
   
          <activity android:name=".LoginActivity"
-            android:theme="@style/ThemeOverlay.MyNoTitleActivity">
+            android:theme="@style/ThemeOverlay.MyNoTitleActivity"/>
 
         <activity android:name=".ui.screens.main.MainActivity"></activity>
 					 

@@ -3,7 +3,7 @@
 	
     <color name="colorPrimary">#1C9EDA</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#1C9EDA</color>
     <color name="colorApp">#1C9EDA</color>
 
     <!-- region Text Input -->
@@ -23,8 +23,8 @@
     <color name="messageSenderStroke">#707070</color>
     <!-- endregion -->
 
-		<!-- Login -->
-		<color name="light_blue">#1c9eda</color>
+    <!-- Login -->
+    <color name="light_blue">#1c9eda</color>
   	<color name="white">#ffffff</color>
   	<color name="light_grey">#e1d9d9</color>
   	<color name="black">#000000</color>
