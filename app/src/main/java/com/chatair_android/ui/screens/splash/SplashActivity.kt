@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.chatair_android.LoginActivity
 import com.chatair_android.R
+import com.chatair_android.ui.screens.contacts.ContactsActivity
 import com.chatair_android.utils.gotoActivity
 
 class SplashActivity : AppCompatActivity() {
