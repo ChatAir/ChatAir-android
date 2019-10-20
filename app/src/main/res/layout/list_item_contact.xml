@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/paddingMedium"
+    android:paddingTop="@dimen/paddingMedium"
+    android:paddingEnd="@dimen/paddingMedium">
+
+    <ImageView
+        android:id="@+id/contactIconImageView"
+        android:layout_width="@dimen/iconImageHeight"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/userNameTextView"
+        android:src="@drawable/ic_user" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginMedium"
+        android:layout_marginLeft="@dimen/marginMedium"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/textMedium"
+        app:layout_constraintStart_toEndOf="@id/contactIconImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/lorem" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textPrimaryLight"
+        android:textSize="@dimen/textMedium"
+        app:layout_constraintStart_toStartOf="@id/userNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/userNameTextView"
+        tools:text="@tools:sample/lorem" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/marginMedium"
+        android:background="@color/textPrimary"
+        app:layout_constraintStart_toStartOf="@id/statusTextView"
+        app:layout_constraintTop_toBottomOf="@id/statusTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,8 @@
     <string name="chat_send_message">Enter a message</string>
     <string name="chat_send_message_content_description">Send message</string>
 
+    <!--  Contacts  -->
+    <string name="contacts_label">Contacts</string>
+    <string name="search_label">Search</string>
+
 </resources>

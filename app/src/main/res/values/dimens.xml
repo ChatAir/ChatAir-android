@@ -2,6 +2,8 @@
 <resources>
 
     <!-- Margin -->
+    <dimen name="marginExtraSmall">4dp</dimen>
+    <dimen name="marginSmall">8dp</dimen>
     <dimen name="marginRegular">12dp</dimen>
     <dimen name="marginMedium">16dp</dimen>
 
@@ -28,5 +30,8 @@
 
     <!-- Divider -->
     <dimen name="dividerRegular">1dp</dimen>
+
+    <!--  Contacts Screen  -->
+    <dimen name="iconImageHeight">40dp</dimen>
 
 </resources>
