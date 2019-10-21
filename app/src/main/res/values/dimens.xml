@@ -2,8 +2,11 @@
 <resources>
 
     <!-- Margin -->
+
+    <dimen name="marginSmall">8dp</dimen>
     <dimen name="marginRegular">12dp</dimen>
     <dimen name="marginMedium">16dp</dimen>
+    <dimen name="marginLarge">32dp</dimen>
 
     <!-- Padding -->
     <dimen name="paddingSmall">8dp</dimen>

@@ -6,4 +6,10 @@
     <string name="chat_send_message">Enter a message</string>
     <string name="chat_send_message_content_description">Send message</string>
 
+    <!-- User -->
+
+    <string name="user_name">User Name</string>
+    <string name="message">Message</string>
+    <string name="user_icon_description">It is avatar of the user</string>
+
 </resources>
