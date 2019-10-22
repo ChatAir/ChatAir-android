@@ -36,7 +36,6 @@
             android:textSize="24sp"
             />
     </androidx.cardview.widget.CardView>
-    <!--done-->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="wrap_content"
@@ -64,8 +63,8 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginEnd="2dp"
             android:layout_marginRight="4dp"
@@ -86,17 +85,12 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
-        android:layout_width="300dp"
-        android:layout_height="84dp"
-        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/cardView2"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="@+id/cardView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551"
-        app:layout_constraintVertical_weight=".4"
         app:cardElevation="0dp"
         >
 
@@ -109,7 +103,13 @@
             android:padding="8dp"
             tools:targetApi="lollipop"
             >
-
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/username_icon_string"
+                android:src="@drawable/ic_user_smal"
+                />
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/userName"
                 android:layout_width="match_parent"
@@ -120,20 +120,14 @@
                 android:textSize="20sp"
                 />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:contentDescription="@string/username_icon_string"
-                android:src="@drawable/ic_user_smal"
-                />
         </androidx.appcompat.widget.LinearLayoutCompat>
-
         <androidx.cardview.widget.CardView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginEnd="4dp"
-            android:layout_marginRight="4dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="260dp"
             android:elevation="9dp"
             app:cardCornerRadius="24dp"
             tools:targetApi="lollipop"
@@ -147,17 +141,16 @@
                 android:src="@drawable/ic_editiconwithellipse"
                 tools:targetApi="lollipop"
                 />
-
         </androidx.cardview.widget.CardView>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView4"
-        android:layout_width="300dp"
-        android:layout_height="84dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/cardView3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView3"
         app:layout_constraintVertical_bias="0.092"
         app:cardElevation="0dp"
@@ -172,7 +165,13 @@
             android:padding="8dp"
             tools:targetApi="lollipop"
             >
-
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/person_image_string"
+                android:src="@drawable/ic_writing"
+                />
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/userAbout"
                 android:layout_width="match_parent"
@@ -184,21 +183,15 @@
                 android:textSize="20sp"
                 />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center_vertical"
-                android:contentDescription="@string/person_image_string"
-                android:src="@drawable/ic_writing"
-                />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginEnd="4dp"
-            android:layout_marginRight="4dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="260dp"
             android:elevation="9dp"
             app:cardCornerRadius="24dp"
             tools:targetApi="lollipop"
