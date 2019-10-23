@@ -19,7 +19,7 @@
     <dimen name="textSmall">12sp</dimen>
     <dimen name="textRegular">15sp</dimen>
     <dimen name="textMedium">18sp</dimen>
-    <dimen name="textXXXL">35sp</dimen>
+    <dimen name="textLarge">35sp</dimen>
 
     <!-- Corners -->
     <dimen name="cornerRegular">5dp</dimen>

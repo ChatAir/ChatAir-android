@@ -73,10 +73,16 @@
     <!-- region Text View -->
     <style name="ChatAirText" parent="Widget.MaterialComponents.TextView">
         <item name="fontFamily">@font/segoe_ui_regular</item>
-        <item name="android:textSize">@dimen/textRegular</item>
+    </style>
+
+    <style name="ChatAirText.HeadingText" parent="ChatAirText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/textLarge</item>
     </style>
 
     <style name="ChatAirText.MessagePartner" parent="ChatAirText">
+        <item name="android:textSize">@dimen/textRegular</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/textPrimary</item>
@@ -96,6 +102,7 @@
     </style>
 
     <style name="ChatAirText.MessageSender" parent="ChatAirText">
+        <item name="android:textSize">@dimen/textRegular</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/textContrast</item>
