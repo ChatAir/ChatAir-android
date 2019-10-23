@@ -11,18 +11,22 @@
         android:layout_height="729dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_new_chat"
         android:layout_width="wrap_content"
-        android:layout_height="wr"
+        android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
-        android:layout_margin="16dp"
-        android:contentDescription="@string/user_icon_description"
+        android:layout_margin="@dimen/marginLarge"
+        android:scaleType="fitCenter"
         android:src="@mipmap/new_chat"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:borderWidth="0dp"
+        android:contentDescription="@string/user_icon_description"
         app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="@+id/recyclerView"
-        app:cornerRadius="20dp"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
