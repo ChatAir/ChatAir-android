@@ -2,7 +2,6 @@
 <resources>
 
     <!-- Margin -->
-
     <dimen name="marginSmall">8dp</dimen>
     <dimen name="marginRegular">12dp</dimen>
     <dimen name="marginMedium">16dp</dimen>
@@ -31,5 +30,9 @@
 
     <!-- Divider -->
     <dimen name="dividerRegular">1dp</dimen>
+
+    <!-- Avatar size -->
+    <dimen name="avatarWidth">50dp</dimen>
+    <dimen name="avatarHeight">50dp</dimen>
 
 </resources>

@@ -22,4 +22,7 @@
     <color name="messageSenderStroke">#707070</color>
     <!-- endregion -->
 
+    <!-- region User -->
+    <color name="border">#000000</color>
+
 </resources>
