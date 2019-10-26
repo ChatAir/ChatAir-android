@@ -12,6 +12,7 @@
 
     <!-- region Text View -->
     <color name="textPrimary">#333333</color>
+    <color name="textPrimaryLight">#BEBEBE</color>
     <color name="textContrast">#F5F5F5</color>
     <!-- endregion -->
 
