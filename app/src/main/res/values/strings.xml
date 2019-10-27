@@ -9,6 +9,7 @@
     <string name="user_name">User Name</string>16dp
     <string name="message">Message</string>
     <string name="user_icon_description">It is avatar of the user</string>
+    <string name="options_label">Options</string>
     <!--  Contacts  -->
     <string name="contacts_label">Contacts</string>
     <string name="search_label">Search</string>

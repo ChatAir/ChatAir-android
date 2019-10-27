@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.screens.contacts.ContactsActivity"
+            android:name=".ui.screens.users.UsersActivity"
             android:parentActivityName=".ui.screens.main.MainActivity" />
         <activity
             android:name=".ui.screens.splash.SplashActivity"
@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.screens.main.MainActivity" />
+        <activity android:name=".ui.screens.contacts.ContactsActivity" />
     </application>
 
 </manifest>
