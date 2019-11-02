@@ -10,4 +10,10 @@
     <string name="contacts_label">Contacts</string>
     <string name="search_label">Search</string>
 
+    <!-- Forget Password -->
+    <string name="forget_password_label">Forget Password</string>
+    <string name="forget_password_prompt">If you forget your password. Enter your email in below field we\'ll send you an email with instructions to change the password</string>
+    <string name="enter_email_hint">Enter email address</string>
+    <string name="send_label">Send</string>
+
 </resources>

@@ -6,6 +6,7 @@
     <dimen name="marginSmall">8dp</dimen>
     <dimen name="marginRegular">12dp</dimen>
     <dimen name="marginMedium">16dp</dimen>
+    <dimen name="marginXLarge">32dp</dimen>
 
     <!-- Padding -->
     <dimen name="paddingSmall">8dp</dimen>
@@ -18,6 +19,7 @@
     <dimen name="textSmall">12sp</dimen>
     <dimen name="textRegular">15sp</dimen>
     <dimen name="textMedium">18sp</dimen>
+    <dimen name="textLarge">35sp</dimen>
 
     <!-- Corners -->
     <dimen name="cornerRegular">5dp</dimen>
