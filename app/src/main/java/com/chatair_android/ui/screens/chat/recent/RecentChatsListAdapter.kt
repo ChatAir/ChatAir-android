@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.chatair_android.R
 import com.chatair_android.ui.screens.chat.Chat
 
-class RecentChatsListAdapter(private val chats: List<Chat>) : RecyclerView.Adapter<RecentChatsListAdapter.RecentChatVH>() {
+class RecentChatsListAdapter(private val chats: List<Chat>, val itemClickListener: OnItemClickListener) : RecyclerView.Adapter<RecentChatsListAdapter.RecentChatVH>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecentChatVH {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item_recent_chat, parent, false)
@@ -20,16 +20,20 @@ class RecentChatsListAdapter(private val chats: List<Chat>) : RecyclerView.Adapt
     }
 
     override fun onBindViewHolder(holder: RecentChatVH, position: Int) {
-        holder.bind(chats[position])
+        holder.bind(chats[position], itemClickListener)
     }
 
     class RecentChatVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val nameTextView: TextView = itemView.findViewById(R.id.userNameTextView)
         private val messageSnippetTextView: TextView = itemView.findViewById(R.id.messageSnippetTextView)
 
-        fun bind(chat: Chat) {
+        fun bind(chat: Chat, clickListener: OnItemClickListener) {
             nameTextView.text = chat.name
             messageSnippetTextView.text = chat.messageSnippet
+
+            itemView.setOnClickListener {
+                clickListener.onItemClicked(chat)
+            }
         }
 
     }

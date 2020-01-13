@@ -11,7 +11,7 @@ import com.chatair_android.ui.screens.chat.Chat
 import com.chatair_android.utils.showLongToast
 import kotlinx.android.synthetic.main.activity_recent_chats.*
 
-class RecentChatsActivity : AppCompatActivity() {
+class RecentChatsActivity : AppCompatActivity(), OnItemClickListener {
 
 
     companion object {
@@ -25,7 +25,7 @@ class RecentChatsActivity : AppCompatActivity() {
         setSupportActionBar(toolbar_recent_chats)
 
         recentChatsRV.layoutManager = LinearLayoutManager(this)
-        recentChatsRV.adapter = RecentChatsListAdapter(getDummyRecentChats())
+        recentChatsRV.adapter = RecentChatsListAdapter(getDummyRecentChats(), this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -50,6 +50,10 @@ class RecentChatsActivity : AppCompatActivity() {
             recentChats.add(Chat(name = "User Name $i", messageSnippet = "Message"))
         }
         return recentChats
+    }
+
+    override fun onItemClicked(chat: Chat) {
+        showLongToast("Open the Chat Screen for chat with ${chat.name} ")
     }
 
 }
