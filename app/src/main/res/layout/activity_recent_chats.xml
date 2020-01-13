@@ -6,4 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".ui.screens.chat.recent.RecentChatsActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_recent_chats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/recent_chats_toolbar_menu"
+        app:title="ChatAir"
+        app:titleTextColor="@color/colorApp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recentChatsRV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_recent_chats"
+        tools:itemCount="3"
+        tools:listitem="@layout/list_item_recent_chat" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
