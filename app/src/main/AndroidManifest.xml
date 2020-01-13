@@ -11,11 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.screens.chat.recent.RecentChatsActivity"></activity>
         <activity
             android:name=".ui.screens.contacts.ContactsActivity"
             android:parentActivityName=".ui.screens.main.MainActivity" />
-        <activity
-            android:name=".ui.screens.splash.SplashActivity">
+        <activity android:name=".ui.screens.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,8 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.screens.main.MainActivity" />
-        <activity android:name=".ui.screens.forgot_password.ForgotPasswordActivity">
-        </activity>
+        <activity android:name=".ui.screens.forgot_password.ForgotPasswordActivity"></activity>
     </application>
 
 </manifest>
