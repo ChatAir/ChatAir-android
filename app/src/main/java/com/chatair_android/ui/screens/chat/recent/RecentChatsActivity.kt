@@ -30,7 +30,7 @@ class RecentChatsActivity : AppCompatActivity(), OnItemClickListener {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val menuInflater = menuInflater
-        menuInflater.inflate(com.chatair_android.R.menu.recent_chats_toolbar_menu, menu)
+        menuInflater.inflate(R.menu.recent_chats_toolbar_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
@@ -39,7 +39,7 @@ class RecentChatsActivity : AppCompatActivity(), OnItemClickListener {
             R.id.action_option_zero -> showLongToast("Option 0 clicked")
             R.id.action_option_one -> showLongToast("Option 1 clicked")
             R.id.action_option_two -> showLongToast("Option 2 clicked")
-            else -> Log.d(Companion.TAG, "Default case of onOptionsItemSelected")
+            else -> Log.d(TAG, "Default case of onOptionsItemSelected")
         }
         return super.onOptionsItemSelected(item)
     }
