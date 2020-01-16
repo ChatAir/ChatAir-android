@@ -26,4 +26,15 @@
         tools:itemCount="3"
         tools:listitem="@layout/list_item_recent_chat" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginRegular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_chat_white"
+        app:backgroundTint="@color/colorPrimary"
+        android:onClick="openContactsActivity"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

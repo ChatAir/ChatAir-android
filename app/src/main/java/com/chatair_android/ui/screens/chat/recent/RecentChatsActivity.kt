@@ -4,10 +4,13 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chatair_android.R
 import com.chatair_android.ui.screens.chat.Chat
+import com.chatair_android.ui.screens.contacts.ContactsActivity
+import com.chatair_android.utils.gotoActivity
 import com.chatair_android.utils.showLongToast
 import kotlinx.android.synthetic.main.activity_recent_chats.*
 
@@ -54,6 +57,10 @@ class RecentChatsActivity : AppCompatActivity(), OnItemClickListener {
 
     override fun onItemClicked(chat: Chat) {
         showLongToast("Open the Chat Screen for chat with ${chat.name} ")
+    }
+
+    fun openContactsActivity(view: View) {
+        this.gotoActivity(view.context, ContactsActivity::class.java)
     }
 
 }

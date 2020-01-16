@@ -29,6 +29,7 @@
 
     <!-- Elevation -->
     <dimen name="elevationToolbar">4dp</dimen>
+    <dimen name="elevationFAB">8dp</dimen>
 
     <!-- Divider -->
     <dimen name="dividerRegular">1dp</dimen>
