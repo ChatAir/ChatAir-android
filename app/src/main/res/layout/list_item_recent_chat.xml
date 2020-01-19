@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/paddingMedium"
+    android:paddingTop="@dimen/paddingMedium"
+    android:paddingEnd="@dimen/paddingMedium">
+
+    <ImageView
+        android:id="@+id/userImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/divider_recent_chat_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/userNameTextView"
+        android:src="@drawable/ic_user" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginMedium"
+        android:layout_marginLeft="@dimen/marginMedium"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/textMedium"
+        app:layout_constraintStart_toEndOf="@id/userImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="User Name" />
+
+    <TextView
+        android:id="@+id/messageSnippetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textPrimaryLight"
+        android:textSize="@dimen/textMedium"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="@id/userNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/userNameTextView"
+        tools:text="Message" />
+
+    <View
+        android:id="@+id/divider_recent_chat_item"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/marginSmall"
+        android:background="@color/inputHint"
+        app:layout_constraintStart_toStartOf="@id/messageSnippetTextView"
+        app:layout_constraintTop_toBottomOf="@id/messageSnippetTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
