@@ -16,4 +16,13 @@
     <string name="enter_email_hint">Enter email address</string>
     <string name="send_label">Send</string>
 
+    <!-- Login Screen -->
+    <string name="txt_label_sign_in">Sign In</string>
+    <string name="hint_email_address">Enter email address</string>
+    <string name="hint_password">Enter password</string>
+    <string name="txt_label_remember_me">Remember me</string>
+    <string name="txt_label_forgot_password">Forgot Password</string>
+    <string name="txt_label_or">Or</string>
+    <string name="txt_login_with_google">Login with Google</string>
+
 </resources>
