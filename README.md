@@ -45,6 +45,11 @@ Here's a list of features that we plan to include overtime.
 - [ ] Chat Heads
 - [ ] Block/Unblock Users
 
+# V1 Features
+- [ ] Authentication (Anonymous, Email, Facebook, Twitter, Google+)
+- [ ] Phone Number Authentication
+- [ ] Text Messages
+
 # Get involved!
 We're very excited about the project and we're looking for other people to get involved. Over time we would like to make the best messaging framework for mobile. Help is always welcome. The more is done the better it gets!
 
