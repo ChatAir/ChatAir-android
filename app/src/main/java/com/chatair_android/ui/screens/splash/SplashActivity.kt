@@ -7,6 +7,7 @@ import com.chatair_android.ui.screens.main.MainActivity
 import com.chatair_android.R
 import com.chatair_android.ui.screens.chat.recent.RecentChatsActivity
 import com.chatair_android.ui.screens.contacts.ContactsActivity
+import com.chatair_android.ui.screens.login.LoginActivity
 import com.chatair_android.utils.gotoActivity
 
 class SplashActivity : AppCompatActivity() {
@@ -15,7 +16,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         Handler().postDelayed({
-            this.gotoActivity(this@SplashActivity, RecentChatsActivity::class.java)
+            this.gotoActivity(this@SplashActivity, LoginActivity::class.java)
         }, 4000)
     }
 }

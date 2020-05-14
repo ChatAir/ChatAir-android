@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.login.LoginActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <ImageView
+            android:id="@+id/iv_chat_air_logo"
+            android:layout_width="196dp"
+            android:layout_height="196dp"
+            android:layout_marginTop="@dimen/marginXLarge"
+            android:src="@drawable/app_logo_icon"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_sign_in_label"
+            style="@style/ChatAirText.HeadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_label_sign_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_chat_air_logo"
+            tools:text="Sign In" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginMedium"
+            android:layout_marginTop="@dimen/marginMedium"
+            android:layout_marginEnd="@dimen/marginMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_sign_in_label">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/ChatAirInput.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email_address"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginMedium"
+            android:layout_marginTop="@dimen/marginMedium"
+            android:layout_marginEnd="@dimen/marginMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/ChatAirInput.TextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/cb_remember_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/til_password"
+            app:layout_constraintTop_toBottomOf="@id/til_password" />
+
+        <TextView
+            android:id="@+id/tv_remember_me"
+            style="@style/ChatAirText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_label_remember_me"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@id/cb_remember_me"
+            app:layout_constraintStart_toEndOf="@id/cb_remember_me"
+            app:layout_constraintTop_toBottomOf="@id/cb_remember_me" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            style="@style/ChatAirText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_label_forgot_password"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@id/cb_remember_me"
+            app:layout_constraintEnd_toEndOf="@id/til_password"
+            app:layout_constraintTop_toBottomOf="@id/cb_remember_me" />
+
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            style="@style/ChatAirButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginMedium"
+            android:layout_marginTop="@dimen/marginMedium"
+            android:layout_marginEnd="@dimen/marginMedium"
+            android:text="@string/txt_label_sign_in"
+            app:layout_constraintTop_toBottomOf="@id/cb_remember_me" />
+
+        <TextView
+            android:id="@+id/tv_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginExtraSmall"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:text="@string/txt_label_or"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_sign_in" />
+
+        <Button
+            style="@style/ChatAirOutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginMedium"
+            android:layout_marginTop="@dimen/marginExtraSmall"
+            android:layout_marginEnd="@dimen/marginMedium"
+            android:text="@string/txt_login_with_google"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_or"
+            app:strokeWidth="2dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

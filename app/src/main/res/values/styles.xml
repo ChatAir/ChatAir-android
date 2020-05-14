@@ -133,6 +133,15 @@
         <item name="android:padding">@dimen/paddingMedium</item>
         <item name="android:fontFamily">@font/segoe_ui_bold</item>
     </style>
+
+    <style name="ChatAirOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:padding">@dimen/paddingMedium</item>
+        <item name="android:fontFamily">@font/segoe_ui_bold</item>
+    </style>
     <!-- endregion -->
 
     <!-- region Divider -->
