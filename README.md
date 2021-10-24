@@ -46,9 +46,9 @@ Here's a list of features that we plan to include overtime.
 - [ ] Block/Unblock Users
 
 # V1 Features
-- [ ] Authentication (Anonymous, Email, Facebook, Twitter, Google+)
-- [ ] Phone Number Authentication
-- [ ] Text Messages
+- [x] Authentication (Anonymous, Email, Facebook, Twitter, Google+)
+- [x] Phone Number Authentication
+- [x] Text Messages
 
 # Get involved!
 We're very excited about the project and we're looking for other people to get involved. Over time we would like to make the best messaging framework for mobile. Help is always welcome. The more is done the better it gets!
@@ -62,7 +62,7 @@ Available Communication Channels:
 
 # License
 
-    Copyright 2019 Chat Air
+    Copyright 2021 Chat Air
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
